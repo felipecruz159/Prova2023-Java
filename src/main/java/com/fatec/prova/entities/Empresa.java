@@ -16,7 +16,7 @@ public class Empresa implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    private String name;
+    private String nome;
     private Boolean internacional;
     private String cnpj;
     private String contato;
@@ -29,12 +29,12 @@ public class Empresa implements Serializable{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public Boolean getInternacional() {
@@ -63,9 +63,9 @@ public class Empresa implements Serializable{
 
     public Empresa() { }
 
-    public Empresa(Integer id, String name, Boolean internacional, String cnpj, String contato) {
+    public Empresa(Integer id, String nome, Boolean internacional, String cnpj, String contato) {
         this.id = id;
-        this.name = name;
+        this.nome = nome;
         this.internacional = internacional;
         this.cnpj = cnpj;
         this.contato = contato;
